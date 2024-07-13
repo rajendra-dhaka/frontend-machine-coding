@@ -1,0 +1,178 @@
+{
+  "data": [
+    {
+      "name": "my-react-app",
+      "type": "folder",
+      "children": [
+        {
+          "name": "public",
+          "type": "folder",
+          "children": [
+            {
+              "name": "index.html",
+              "type": "file"
+            },
+            {
+              "name": "favicon.ico",
+              "type": "file"
+            },
+            {
+              "name": "manifest.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "src",
+          "type": "folder",
+          "children": [
+            {
+              "name": "components",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Header.js",
+                  "type": "file"
+                },
+                {
+                  "name": "Footer.js",
+                  "type": "file"
+                },
+                {
+                  "name": "Sidebar.js",
+                  "type": "file"
+                },
+                {
+                  "name": "MainContent.js",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "pages",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Home.js",
+                  "type": "file"
+                },
+                {
+                  "name": "About.js",
+                  "type": "file"
+                },
+                {
+                  "name": "Contact.js",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "assets",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "images",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "logo.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "background.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "styles",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "main.css",
+                      "type": "file"
+                    },
+                    {
+                      "name": "theme.css",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "App.js",
+              "type": "file"
+            },
+            {
+              "name": "index.js",
+              "type": "file"
+            },
+            {
+              "name": "serviceWorker.js",
+              "type": "file"
+            },
+            {
+              "name": "setupTests.js",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "node_modules",
+          "type": "folder",
+          "children": [
+            {
+              "name": "react",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "index.js",
+                  "type": "file"
+                },
+                {
+                  "name": "package.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "react-dom",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "index.js",
+                  "type": "file"
+                },
+                {
+                  "name": "package.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "README.md",
+          "type": "file"
+        },
+        {
+          "name": "package.json",
+          "type": "file"
+        },
+        {
+          "name": "webpack.config.js",
+          "type": "file"
+        },
+        {
+          "name": "babel.config.js",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}
