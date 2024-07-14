@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import FileExplorerData from "@/data/fileExplorerData.json";
 import { FileExplorerItem } from "@/components";
