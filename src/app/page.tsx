@@ -26,7 +26,7 @@ export default function Home() {
         <Button text="File Explorer" link="/file-explorer" />
         <Button text="Interactive Shape" link="/interactive-shape" />
         <Button text="Progress Bar" link="/progress-bar" />
-        <Button text="World" link="/" />
+        <Button text="Tic Tac Toe" link="/tic-tac-toe" />
         <Button text="Hello" link="/" />
         <Button text="World" link="/" />
       </div>

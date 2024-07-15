@@ -78,7 +78,7 @@ const Page = () => {
   return (
     <div className="m-4">
       <div
-        className={`grid gap-1 max-w-[50%]`}
+        className={`grid gap-1 max-w-fit`}
         style={{
           gridTemplateColumns: `repeat(${gridSize.col}, minmax(0, 1fr))`,
         }}
@@ -87,7 +87,7 @@ const Page = () => {
           return row.map((cell, colIdx) => (
             <div
               key={`${rowIdx}-${colIdx}`}
-              className={` cursor-pointer border-2 border-neutral-700 h-20  ${
+              className={` cursor-pointer border-2 border-neutral-700 h-20 w-20 ${
                 cell === true ? "bg-blue-400" : ""
               }`}
               onClick={() => handleCellClick(rowIdx, colIdx, true)}
