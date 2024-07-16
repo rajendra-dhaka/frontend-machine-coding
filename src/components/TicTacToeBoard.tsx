@@ -14,6 +14,8 @@ const TicTacToeBoard = ({
         gridTemplateColumns: `repeat(${board.length || 3}, minmax(0, 1fr))`,
       }}
     >
+      {/*After creating these arrays of <div> elements, flatMap flattens them into a single array of <div> elements.*/}
+      {/*The use of flatMap was simply a way to flatten the nested arrays, but it isn't strictly necessary.*/}
       {board.flatMap((row, rowIdx) => {
         return row.map((cell, colIdx) => (
           <div
