@@ -1,6 +1,6 @@
 "use client";
 
-import { TicTacToeBoard } from "@/components";
+import { ReactConfetti, TicTacToeBoard } from "@/components";
 import { checkWinner, drawBoard } from "@/utils";
 import React, { useEffect, useState } from "react";
 
@@ -9,6 +9,8 @@ const Page = () => {
   const [board, setBoard] = useState(drawBoard(boardSize));
   const [player, setPlayer] = useState("X");
   const [winner, setWinner] = useState(null);
+
+  const showConfetti = winner && <ReactConfetti />;
 
   //   const handleCellClick = (rowIdx: number, colIdx: number) => {
   //     if (board[rowIdx][colIdx] || winner) {
@@ -89,6 +91,7 @@ const Page = () => {
           </select>
         </div>
       </div>
+      {showConfetti}
     </div>
   );
 };

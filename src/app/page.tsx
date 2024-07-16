@@ -1,6 +1,19 @@
 import Link from "next/link";
 import React from "react";
 
+const navigateData = [
+  { text: "File Explorer", link: "/file-explorer" },
+  { text: "Interactive Shape", link: "/interactive-shape" },
+  { text: "Progress Bar", link: "/progress-bar" },
+  { text: "Tic Tac Toe", link: "/tic-tac-toe" },
+  { text: "React Toast", link: "/react-toast" },
+  { text: "", link: "" },
+  { text: "", link: "" },
+  { text: "", link: "" },
+  { text: "", link: "" },
+  { text: "", link: "" },
+];
+
 type ButtonProps = {
   link: string;
   text: string;
@@ -8,7 +21,7 @@ type ButtonProps = {
 
 function Button({ link, text }: ButtonProps): JSX.Element {
   return (
-    <Link href={link} className="text-center">
+    <Link href={link} className="text-center" target="_blank">
       <button className="w-full bg-blue-500 rounded-xl hover:bg-blue-400 cursor-pointer py-2 text-white">
         {text}
       </button>
@@ -19,16 +32,13 @@ function Button({ link, text }: ButtonProps): JSX.Element {
 export default function Home() {
   return (
     <main className="min-h-screen p-24 flex flex-col items-center ">
-      <h3 className="text-lg font-medium text-neutral-600 mb-20">
+      <h3 className="text-lg font-medium text-neutral-600 mb-20 text-center">
         React Interview Questions | Machine Coding Round
       </h3>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <Button text="File Explorer" link="/file-explorer" />
-        <Button text="Interactive Shape" link="/interactive-shape" />
-        <Button text="Progress Bar" link="/progress-bar" />
-        <Button text="Tic Tac Toe" link="/tic-tac-toe" />
-        <Button text="Hello" link="/" />
-        <Button text="World" link="/" />
+      <div className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {navigateData.map(
+          (item, i) => item?.text && <Button key={i} {...item} />
+        )}
       </div>
     </main>
   );
