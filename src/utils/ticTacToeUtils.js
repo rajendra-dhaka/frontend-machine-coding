@@ -1,4 +1,8 @@
-const checkWinner = (board) => {
+export const drawBoard = (boardSize) => {
+  return Array.from({ length: boardSize }, () => Array(boardSize).fill(""));
+};
+
+export const checkWinner = (board) => {
   const size = board.length;
 
   // Check rows
@@ -55,7 +59,7 @@ const checkWinner = (board) => {
   return null;
 };
 
-// const checkWinner = (board) => {
+// export const checkWinner = (board) => {
 //   const size = board.length;
 //   const lines = [];
 
@@ -77,5 +81,3 @@ const checkWinner = (board) => {
 
 //   return null;
 // };
-
-export default checkWinner;
