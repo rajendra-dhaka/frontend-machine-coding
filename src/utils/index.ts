@@ -1,1 +1,1 @@
-export { default as checkWinner } from "@/utils/ticTacToeUtils";
+export * from "@/utils/ticTacToeUtils";

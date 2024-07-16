@@ -1,14 +1,12 @@
 "use client";
 
 import { TicTacToeBoard } from "@/components";
-import { checkWinner } from "@/utils";
-import React, { useState } from "react";
+import { checkWinner, drawBoard } from "@/utils";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
   const [boardSize, setBoardSize] = useState(3);
-  const [board, setBoard] = useState(
-    Array.from({ length: boardSize }, () => Array(boardSize).fill(""))
-  );
+  const [board, setBoard] = useState(drawBoard(boardSize));
   const [player, setPlayer] = useState("X");
   const [winner, setWinner] = useState(null);
 
@@ -55,6 +53,10 @@ const Page = () => {
     setWinner(null);
   };
 
+  useEffect(() => {
+    setBoard(drawBoard(boardSize));
+  }, [boardSize]);
+
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
       <div className="flex flex-col items-center gap-4">
@@ -70,6 +72,22 @@ const Page = () => {
         >
           Reset
         </button>
+        {/* Below is select option for row and col */}
+
+        <div>
+          <label htmlFor="size">SIZE:</label>
+          <select
+            name="size"
+            id="size"
+            value={boardSize}
+            onChange={(e) => setBoardSize((prev) => +e.target.value)}
+          >
+            <option value={3}>3</option>
+            <option value={4}>4</option>
+            <option value={5}>5</option>
+            <option value={6}>6</option>
+          </select>
+        </div>
       </div>
     </div>
   );
