@@ -7,7 +7,7 @@ const navigateData = [
   { text: "Progress Bar", link: "/progress-bar" },
   { text: "Tic Tac Toe", link: "/tic-tac-toe" },
   { text: "React Toast", link: "/react-toast" },
-  { text: "", link: "" },
+  { text: "Accordion", link: "/accordion" },
   { text: "", link: "" },
   { text: "", link: "" },
   { text: "", link: "" },
